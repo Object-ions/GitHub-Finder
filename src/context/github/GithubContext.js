@@ -55,8 +55,6 @@ export const GithubProvider = ({ children }) => {
         payload: data,
       });
     }
-
-
   };
 
   // Set loading
@@ -69,6 +67,7 @@ export const GithubProvider = ({ children }) => {
         user: state.user,
         loading: state.loading,
         searchUsers,
+        getUser,
       }}
     >
       {children}
